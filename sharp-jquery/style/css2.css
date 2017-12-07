@@ -1,0 +1,36 @@
+
+body {
+	width: 500px;
+	margin: 40px auto;
+}
+.clearfix::before, .clearfix::after {
+	display: table;
+	line-height: 0;
+	content: ""
+}
+
+.clearfix::after {
+	clear: both
+}
+div, span, p {
+	width: 140px;
+	height: 140px;
+	margin: 5px;
+	background: #aaa;
+	border: #000 1px solid;
+	float: left;
+	font-size: 17px;
+	font-family: Verdana;
+}
+
+div.mini {
+	overflow: hidden;
+	width: 55px;
+	height: 55px;
+	background-color: #aaa;
+	font-size: 12px;
+}
+
+div.hide {
+	display: none;
+}
